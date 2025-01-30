@@ -123,6 +123,3 @@ for pair, url in currency_pairs.items():
 
 # Close the WebDriver
 driver.quit()
-
-# Push the generated CSV files to GitHub
-push_to_github()
