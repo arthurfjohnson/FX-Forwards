@@ -38,7 +38,8 @@ driver = webdriver.Chrome(service=service, options=options)
 currency_pairs = {
     "EUR-USD": "https://www.fxempire.com/currencies/eur-usd/forward-rates",
     "GBP-USD": "https://www.fxempire.com/currencies/gbp-usd/forward-rates",
-    "USD-CAD": "https://www.fxempire.com/currencies/usd-cad/forward-rates"
+    "USD-CAD": "https://www.fxempire.com/currencies/usd-cad/forward-rates",
+    "GBP-EUR": "https://www.fxempire.com/currencies/gbp-eur/forward-rates"
 }
 
 # Date offsets for expiration dates
