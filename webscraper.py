@@ -24,6 +24,8 @@ def push_to_github():
 
     # Push to GitHub
     subprocess.run(['git', 'push', 'origin', 'main'])  # Replace 'main' with your branch name if different
+    
+    subprocess.run('git add .', shell=True)
 
     # Change back to the original directory
     os.chdir('..')
