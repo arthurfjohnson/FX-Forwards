@@ -11,24 +11,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from datetime import datetime, timedelta
 
-def push_to_github():
-    # Change to the directory containing your CSV files
-    os.chdir('FX Forward Outputs')
-
-    # Add all changes
-    subprocess.run(['git', 'add', '.'])
-
-    # Commit changes with a timestamp
-    commit_message = f"Update FX Forward Outputs - {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-    subprocess.run(['git', 'commit', '-m', commit_message])
-
-    # Push to GitHub
-    subprocess.run(['git', 'push', 'origin', 'main'])  # Replace 'main' with your branch name if different
-    
-    subprocess.run('git add .', shell=True)
-
-    # Change back to the original directory
-    os.chdir('..')
 
 # Set up Selenium WebDriver
 options = webdriver.ChromeOptions()
